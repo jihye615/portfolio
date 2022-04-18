@@ -148,11 +148,32 @@ header nav ul li a:hover{background-color: #fff;color: #3F659E; font-weight: bol
 
 .design h4{ position: relative; left:0; right: 0; margin: auto; width: 200px; font-size: 50px;font-family: 'Kreon', serif;color: rgb(0, 0, 0); text-align: center;}
 .design .inner ul{  width: 100%;  display: flex; flex-wrap: wrap; justify-content:center; margin-top: 40px;}
-.design .inner li{ position: relative; font-size: 14px; font-weight: 600; margin:10px; width: 44%; margin:10px;}
+.design .inner li{ position: relative; font-size: 14px; font-weight: 600; margin:10px; width: 40%; margin:10px;}
 .design .inner li img{transition: all 0.5s; width: 100%;}
 .design .inner li p{position: absolute; top: 50%; left: 50%; color: #fff; transform: translate(-50%, -50%); opacity: 0; transition: all 0.5s;}
 .design .inner li:hover img{opacity: 0.5;}
 .design .inner li:hover p{opacity: 1;}
+
+
+.design {background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #aed1f3 100%);overflow: hidden;}
+.ocean { height: 5%;width:100%;position:absolute;bottom:0;left:0;background: #3f659e}
+.wave {background: url(../images/wave.png) repeat-x; position: absolute;top: -198px;width: 6400px;height: 198px;animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;transform: translate3d(0, 0, 0);}
+.wave:nth-of-type(2) {top: -175px;animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;opacity: 1;} 
+@keyframes wave {
+    0% {margin-left: 0;}
+    100% {margin-left: -1600px;}
+}
+@keyframes swell {
+0%, 100% {transform: translate3d(0,-25px,0);}
+    50% {transform: translate3d(0,5px,0);}
+}
+
+
+
+
+
+
+
 
 /* 프로필영역 */
 .profilo h2{ position: relative;left:0; right: 0; margin: auto; width: 200px; font-size: 50px;font-family: 'Kreon', serif;color: rgb(0, 0, 0); text-align:center; top: -50px; }
@@ -174,14 +195,27 @@ header nav ul li a:hover{background-color: #fff;color: #3F659E; font-weight: bol
 
 
 /* 연락처영역 */
-#contact{position: relative;}
-.contact_bg{position: absolute; bottom: 0; width: 100%; height: 40%; border-radius:250px 0 0 0 ; background: radial-gradient(circle at top left, rgba(202, 202, 202, 0.164) 17%, #6c90c7 100%);}
-#contact .contact_info{position: absolute; right: 10%; bottom: 50px; z-index: 5; text-align: right;}
+#contact{position: relative; width: 100%; height: 400px;}
+#contact .contact_bg{position: absolute; bottom: 0; width: 100%; height: 90%; border-radius:250px 0 0 0 ; background: radial-gradient(circle at top left, rgba(202, 202, 202, 0.164) 17%, #6c90c7 100%);}
+#contact .contact_info{position: absolute; right: 10%; bottom:50px; z-index: 5; text-align: right;}
 #contact .contact_info p{ margin-bottom:15px;}
 #contact .contact_info h3{font-size: 2.000em; font-family: 'Kreon', serif;}
+
+
+
+
 /* tab */
 @media all and (min-width:768px){
     body{background-color: blanchedalmond;}
+    .design .inner ul{
+        width: 100%;
+    }
+}
+
+
+/* pc */
+@media all and (min-width:1200px){
+    body{background-color: rgb(15, 156, 46);}
     .design .inner ul{
         width: 100%;
     }
