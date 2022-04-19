@@ -19,7 +19,7 @@
 
 <body>
     <header>
-        <nav class="pager">
+        <nav class="pager pager-mo">
             <ul>
                 <li class="on"><a href="#">메인<p></p></a></li>
                 <li><a href="#">웹<p></p></a></li>
@@ -32,6 +32,18 @@
             </ul>
         </nav>
     </header>
+    <nav class="pager pager-pc">
+        <ul>
+            <li class="on"><a href="#">메인<p></p></a></li>
+            <li><a href="#">웹<p></p></a></li>
+            <li><a href="#">젠틀몬스터<p></p></a></li>
+            <li><a href="#">스타벅스<p></p></a></li>
+            <li><a href="#">웹리디자인<p></p></a></li>
+            <li><a href="#">디자인<p></p></a></li>
+            <li><a href="#">프로필<p></p></a></li>
+
+        </ul>
+    </nav>
     <div class="menu-toggle-btn">
         <div id="one"></div>
         <div id="two"></div>
@@ -60,7 +72,7 @@
                     <h3>web publisher</h3>
                     <div class="scroll-container">
                         <div class="scroller"></div>
-                      </div>
+                    </div>
                 </div>
 
             </div>
@@ -70,13 +82,14 @@
         <!--#intro-->
         <section id="intCont">
             <div class="inner">인트로페이지
+                <h2>ㅜㅜ</h2>
 
 
             </div>
         </section>
         <!--.gentle-monter -->
         <section id="gentle">
-            <div class="inner ">
+            <div class="inner web">
                 <div class="item animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s"
                     data-offset="100">
                     <div class=" item_box">
@@ -108,10 +121,8 @@
                             다채로운 레이아웃 구조를 사용해 <br> 브랜드의
                             정체성을 잘드러낼수있게 <br> 기획하였습니다.</p>
                         <div class="btn-group">
-                            <button class="btn1"> <a href="https://github.com/jihye615/g_m/tree/master"
-                                    target=”_blank”>GitHub</a></button>
-                            <button class="btn2"><a href="https://jihye615.github.io/g_m/"
-                                    target=”_blank”>GoSite</a></button>
+                            <a href="https://github.com/jihye615/g_m/tree/master" target=”_blank” class="btn1">GitHub</a>
+                            <a href="https://jihye615.github.io/g_m/" target=”_blank” class="btn2">GoSite</a>
                         </div>
                     </div>
                 </div>
@@ -119,54 +130,53 @@
         </section>
         <!--#starbucks-->
         <section id="starbucks">
-            <div class="inner">
-                <div class="inner ">
-                    <div class="item animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s"
-                        data-offset="100">
-                        <div class="item_box">
-                            <figure><img src="images/starbucks_mainpage.jpg" alt="스타벅스 메인페이지"></figure>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="info_text animate" data-animate="fadeIn" data-duration="1.5s" data-delay="0.1s"
-                            data-offset="100">
-                            <h3><img src="images/starbucks_logo.png" alt="스타벅스로고"></h3>
-                            <nav>
-                                <ul class="info_title">
-                                    <li>TYPE
-                                        <ul class="info_sub sub_flex">
-                                            <li>Clone Coding</li>
-                                            <li> Web Main Page</li>
-                                        </ul>
-                                    </li>
-                                    <li>INFO
-                                        <ul class="info_sub">
-                                            <li>참여도 100% 제작기간 2주</li>
-                                            <li>HTML5 , CSS3 , JavaScript</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <p>기존 스타벅스 사이트를 똑같이 따라하며
-                                레이아웃 구조에대한 이해도를 익혔습니다.</p>
-                            <div class="btn-group">
-                                <button class="btn1"> <a href="https://github.com/jihye615/g_m/tree/master"
-                                        target=”_blank”>Git Hub</a></button>
-                                <button class="btn2"><a href="https://jihye615.github.io/g_m/" target=”_blank”>Go
-                                        Site</a></button>
-                            </div>
-                        </div>
+            <div class="inner web">
+
+                <div class="item animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s"
+                    data-offset="100">
+                    <div class="item_box">
+                        <figure><img src="images/starbucks_mainpage.jpg" alt="스타벅스 메인페이지"></figure>
                     </div>
                 </div>
+                <div class="info">
+                    <div class="info_text animate" data-animate="fadeIn" data-duration="1.5s" data-delay="0.1s"
+                        data-offset="100">
+                        <h3><img src="images/starbucks_logo.png" alt="스타벅스로고"></h3>
+                        <nav>
+                            <ul class="info_title">
+                                <li>TYPE
+                                    <ul class="info_sub sub_flex">
+                                        <li>Clone Coding</li>
+                                        <li> Web Main Page</li>
+                                    </ul>
+                                </li>
+                                <li>INFO
+                                    <ul class="info_sub">
+                                        <li>참여도 100% 제작기간 2주</li>
+                                        <li>HTML5 , CSS3 , JavaScript</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p>기존 스타벅스 사이트를 똑같이 따라하며
+                            레이아웃 구조에대한 이해도를 익혔습니다.</p>
+                        <div class="btn-group">
+                            <a href="https://github.com/jihye615/g_m/tree/master" target=”_blank” class="btn1" >Git Hub</a>
+                            <a href="https://jihye615.github.io/g_m/" target=”_blank” class="btn2">Go Site</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
         <!--.slider-->
         <section class="slider">
-            <div class="inner">
+            <div class="inner ">
                 <h2>re – Design</h2>
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide trainMuseum">
+
+                        <div class="swiper-slide trainMuseum  web">
 
                             <div class="item">
                                 <div class="item_box">
@@ -180,7 +190,7 @@
                                         <ul class="info_title">
                                             <li>TYPE
                                                 <ul class="info_sub sub_flex">
-                                                    
+
                                                     <li> Web Main Page</li>
                                                 </ul>
                                             </li>
@@ -196,19 +206,17 @@
                                         부분을 보완하여 시선을 끌수있게 적절한 사진을 배치하였습니다.
                                     </p>
                                     <div class="btn-group">
-                                        <button class="btn1"> <a href="https://github.com/jihye615/traimMuseum"
-                                                target=”_blank”>Git Hub</a></button>
-                                        <button class="btn2"><a href="https://jihye615.github.io/traimMuseum/"
-                                                target=”_blank”>Go Site</a></button>
+                                        <a href="https://github.com/jihye615/traimMuseum" target=”_blank” class="btn1">Git Hub</a>
+                                        <a href="https://jihye615.github.io/traimMuseum/" target=”_blank”  class="btn2">Go Site</a>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="swiper-slide pizzaHut">
+                        <div class="swiper-slide pizzaHut  web">
                             <div class="item">
                                 <div class="item_box">
-                                    <figure><img src="images/pizzahut_img copy.jpg" alt="피자헛 메인페이지"></figure>
+                                    <figure><img src="images/pizzahut_imgcopy.jpg" alt="피자헛메인페이지"></figure>
                                 </div>
                             </div>
                             <div class="info">
@@ -218,7 +226,7 @@
                                         <ul class="info_title">
                                             <li>TYPE
                                                 <ul class="info_sub sub_flex">
-                                                    
+
                                                     <li> Web Main Page</li>
                                                 </ul>
                                             </li>
@@ -235,10 +243,8 @@
                                         브랜드가 가지고 다양성을 노출시켰습니다.</p>
 
                                     <div class="btn-group">
-                                        <button class="btn1"> <a href="https://github.com/jihye615/g_m/tree/master"
-                                                target=”_blank”>Git Hub</a></button>
-                                        <button class="btn2"><a href="https://jihye615.github.io/g_m/"
-                                                target=”_blank”>Go Site</a></button>
+                                        <a href="https://github.com/jihye615/g_m/tree/master" target=”_blank”  class="btn1">Git Hub</a>
+                                        <a href="https://jihye615.github.io/g_m/" target=”_blank”  class="btn2">Go Site</a>
                                     </div>
                                 </div>
                             </div>
@@ -252,17 +258,17 @@
 
             <div class="button-prev"><span class="material-icons">arrow_back_ios</span></div>
             <div class="button-next"><span class="material-icons">arrow_forward_ios</span></div>
+        </section>
 
-        </section>
         <!--desinge-->
-        </section>
+       
         <section class="design">
             <div class="inner">
                 <h4>DESIGN</h4>
                 <div class="ocean">
-                <div class="wave"></div>
-                <div class="wave"></div>
-              </div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
                 <div>
                     <ul class="design_box">
                         <li><a href="images/bg.jpg"><img src="images/bbg.jpg" alt="앱 아이콘 만들기">
@@ -286,82 +292,84 @@
                     </ul>
                 </div>
             </div>
-            
+
         </section>
         <!--.profilo-->
         <section class="profilo">
             <div class="inner">
                 <h2>PROFILO </h2>
                 <h3>About my</h3>
-                <div class="About">
-                    <img src="images/my.png" alt="">
-                    <ul>
-                        <li>배지혜</li>
-                        <li><b>학력 </b>1997.06.15 (만 25세) </li>
-                        <li><b>나이</b>송호고등학교졸업</li>
-                        <li><b>수료 </b>PWA제작 프론트엔트 개발</li>
-                        <li><b>자격증</b>GTQ 포토샵 1급</li>
-                    </ul>
-                </div>
-                <p>'모든 사람들이 이용하기 쉬운,
-                    기본에 충실한 사이트를 만들고자 합니다'</p>
-                <div class="skill">
-                    <h3>Skills</h3>
-                    <ul class="skill_gnb">
-                        <li><img src="images/skillCon/html_con.png" alt="html5아이콘">
-                            <ul class="skill_sub">
-                                <li>HTML5</li>
-                                <li>웹 표준과 웹 접근성을 고려하며 시멘틱 태그를 이용한 마크업이 가능합니다.</li>
-                            </ul></img>
-                        </li>
-                        <li>
-                            <img src="images/skillCon/css_con.png" alt="css아이콘">
-                            <ul class="skill_sub">
-                                <li>CSS3</li>
-                                <li>미디어 쿼리를 이용한 반응형 페이지 작성이 가능하고 keyframes를 활용한
-                                    애니메이팅이 가능합니다.</li>
-                            </ul>
-                            </img>
-                        </li>
-                        <li>
-                            <img src="images/skillCon/js_con.png" alt="js아이콘">
-                            <ul class="skill_sub">
-                                <li>JS/JQuery</li>
-                                <li>Javascript와JQuery의 기본 구조와 문법을 알고 있으며 JQuert 플러그인 활용이 가능합니다.</li>
-                            </ul>
-                            </img>
-                        </li>
-                        <li>
-                            <img src="images/skillCon/figma_con.png" alt="Figma아이콘">
-                            <ul class="skill_sub">
-                                <li>Figma</li>
-                                <li>와이어 프레임, 프로토 타입 및 시안 작업이 가능합니다.</li>
-                            </ul>
-                            </img>
-                        </li>
-                        <li>
-                            <img src="images/skillCon/photoshop.png" alt="Photoshop아이콘">
-                            <ul class="skill_sub">
-                                <li>Photoshop</li>
-                                <li>이미지 보정, 합성 , 사이트 시안 작업 등 가능합니다.</li>
-                            </ul>
-                            </img>
-                        </li>
-                        <li>
-                            <img src="images/skillCon/illustrator.png" alt="Illustrator아이콘">
-                            <ul class="skill_sub">
-                                <li>Illustrator</li>
-                                <li>펜툴 활용 , 캐릭터 생성 및 도형 활용이 가능합니다.</li>
-                            </ul>
-                            </img>
-                        </li>
-                    </ul>
+                <div class="profilo_all">
+                    <div class="About">
+                        <img src="images/my.png" alt="">
+                        <ul>
+                            <li>배지혜</li>
+                            <li><b>학력 </b>1997.06.15 (만 25세) </li>
+                            <li><b>나이</b>송호고등학교졸업</li>
+                            <li><b>수료 </b>PWA제작 프론트엔트 개발</li>
+                            <li><b>자격증</b>GTQ 포토샵 1급</li>
+                        </ul>
+                    </div>
+                    <p>'모든 사람들이 이용하기 쉬운, <br>
+                        기본에 충실한 사이트를 만들고자 합니다'</p>
+                    <div class="skill">
+                        <h3>Skills</h3>
+                        <ul class="skill_gnb">
+                            <li><img src="images/skillCon/html_con.png" alt="html5아이콘">
+                                <ul class="skill_sub">
+                                    <li>HTML5</li>
+                                    <li>웹 표준과 웹 접근성을 고려하며 시멘틱 태그를 이용한 마크업이 가능합니다.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/skillCon/css_con.png" alt="css아이콘">
+                                <ul class="skill_sub">
+                                    <li>CSS3</li>
+                                    <li>미디어 쿼리를 이용한 반응형 페이지 작성이 가능하고 keyframes를 활용한
+                                        애니메이팅이 가능합니다.</li>
+                                </ul>
+                                
+                            </li>
+                            <li>
+                                <img src="images/skillCon/js_con.png" alt="js아이콘">
+                                <ul class="skill_sub">
+                                    <li>JS/JQuery</li>
+                                    <li>Javascript와JQuery의 기본 구조와 문법을 알고 있으며 JQuert 플러그인 활용이 가능합니다.</li>
+                                </ul>
+                               
+                            </li>
+                            <li>
+                                <img src="images/skillCon/figma_con.png" alt="Figma아이콘">
+                                <ul class="skill_sub">
+                                    <li>Figma</li>
+                                    <li>와이어 프레임, 프로토 타입 및 시안 작업이 가능합니다.</li>
+                                </ul>
+                                
+                            </li>
+                            <li>
+                                <img src="images/skillCon/photoshop.png" alt="Photoshop아이콘">
+                                <ul class="skill_sub">
+                                    <li>Photoshop</li>
+                                    <li>이미지 보정, 합성 , 사이트 시안 작업 등 가능합니다.</li>
+                                </ul>
+                                
+                            </li>
+                            <li>
+                                <img src="images/skillCon/illustrator.png" alt="Illustrator아이콘">
+                                <ul class="skill_sub">
+                                    <li>Illustrator</li>
+                                    <li>펜툴 활용 , 캐릭터 생성 및 도형 활용이 가능합니다.</li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <!--contact-->
         <section id="contact">
-               <div class="contact_info">
+            <div class="contact_info">
                 <p>언제든 준비되어 있는 신입 웹퍼블리셔, 배지혜입니다.</p>
                 <h3>CONTACT</h3>
                 <ul>
