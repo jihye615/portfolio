@@ -14,6 +14,7 @@ img{display: block;}
 
 
 #wrap>section>.inner{width:80%; margin:auto; height:700px;padding:150px 0;} 
+.slider .inner{width:80%; margin:auto; height:700px;padding:150px 0;}
 
 
 /* 모바일 header */
@@ -110,13 +111,20 @@ header .pager-mo,.pager-pc{display: none;}
 
 
 
-.slider {position: relative; width: 100%; margin: auto;background-image: radial-gradient(circle at top left, rgba(0, 0, 0, 0) 17%, #3F659E 100%);}
+.slider {position: relative; width: 100%; margin: auto;}
+/* background-image: radial-gradient(circle at top left, rgba(0, 0, 0, 0) 17%, #3F659E 100%); */
 
 /* 이전 다음버튼 */
 .slider .button-prev,.slider .button-next {position: absolute;top: 0;bottom: 0; margin: auto;width:80px;height: 80px;outline: none;z-index: 1;cursor: pointer;}
 .slider .button-prev {left:50px;}
 .slider .button-next {right: 0;}
 .slider .button-prev .material-icons,.slider .button-next .material-icons {color: rgb(0, 0, 0); font-size: 40px;}
+
+.slider .trainMuseum {background:no-repeat center; background-size: cover;background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url(../images/trainMuseum_bg.jpg);}
+.slider .pizzaHut {background:no-repeat center; background-size: cover;background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url(../images/pizzaHut_bg.jpg);}
+
+
+
 
 /*pizzaHut  */
 
@@ -146,9 +154,9 @@ header .pager-mo,.pager-pc{display: none;}
 .design .inner ul{  width: 100%;  display: flex; flex-wrap: wrap; justify-content:center; margin-top: 40px;}
 .design .inner li{ position: relative; font-size: 14px; font-weight: 600; margin:10px; width: 40%; margin:10px;}
 .design .inner li img{transition: all 0.5s; width: 100%;}
-.design .inner li p{position: absolute; top: 50%; left: 50%; width: auto; color: #fff; transform: translate(-50%, -50%); opacity: 0; transition: all 0.5s;}
+.design .inner li p{position: absolute; top: 50%; text-align: center; width:100%; color: #fff;}
 .design .inner li:hover img{opacity: 0.5;}
-.design .inner li:hover p{opacity: 1;}
+
 
 
 .design {background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #aed1f3 100%);overflow: hidden;}
@@ -206,12 +214,14 @@ header .pager-mo,.pager-pc{display: none;}
 /* pc */
 @media all and (min-width:1200px){
     #wrap>section>.inner{width:1200px;} 
+    .slider .inner{width:1200px}
+
 .menu-toggle-btn{display: none;}
 .pager-pc{display: block;}
 .pager-mo{display:none;}
 header{background: none;}
 
-.pager-pc{position: fixed; top: 40%; right: 50%; margin-right: 650px; z-index: 1;}
+.pager-pc{position: fixed; top: 40%; right: 50%; margin-right: 650px; z-index: 9999; }
 .pager-pc li{margin-bottom: 12px; text-align: right;}
 .pager-pc li a{display: inline-block;font-weight: 500; transition: all 0.3s; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.8);}
 .pager-pc li:hover a{opacity: 0.6;}
@@ -234,9 +244,18 @@ header{background: none;}
 
 .inner .info .btn-group{top: 80px;}
 
+/* .slider .swiper{width: 100%; height: 100vh;} */
+/* .slider .swiper .swiper-wrapper{background: #000000;} */
+.slider .button-prev,.slider .button-next {position: absolute;top: 0;bottom: 0; margin: auto;width:80px;height: 80px;outline: none;z-index: 1;cursor: pointer;}
+.slider .button-prev {left:50px;}
+.slider .button-next {right: 0;}
 
+.slider .button-prev .material-icons{font-size: 50px;}
+
+/* 디자인 */
 .design .inner li{width: 300px; height: 300px; margin: 20px;}
-
+.design .inner li p{ top: 50%; left: 50%; width: auto; color: #fff; transform: translate(-50%, -50%); opacity: 0; transition: all 0.5s;}
+.design .inner li:hover p{opacity: 1;}
 
 /* 프로필 */
 .profilo_all{display: flex; flex-wrap: wrap;}
