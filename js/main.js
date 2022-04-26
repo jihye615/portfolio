@@ -55,8 +55,22 @@ new Swiper('.slider .swiper', {
     }
 });
 
-// 컬러박스
-$('.design .inner ul li a').colorbox({rel:'etc'});
+
+//클래스 명을 추출해서 같은 클래스명이 붙은 팝업창을 불러옴
+$('.img_box').on('click',function(){
+    let popName = $(this).parent('li').attr('class');
+    $('.popup_list .'+popName).fadeIn(300,'swing');
+});
+
+$('.close_btn').on('click',function(e){
+    e.preventDefault();
+    popClose();
+});
+
+function popClose() {
+    $('.popup_wrap').fadeOut(300,'swing');
+};
+
 
 AOS.init();
 
