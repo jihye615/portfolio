@@ -157,7 +157,7 @@ header .pager-mo,.pager-pc{display: none;}
 
 /* 팝업창 영역 */
 .popup_wrap h4{position: absolute; bottom: 0;}
-.popup_wrap { display: none; position: absolute;top: 50%;left: 50%;transform:translate(-50%, -50%);width: 80%;height: 100%;max-width: 800px;max-height: 800px;background: rgba(255, 255, 255, 0.925);border-radius: 10px;z-index: 1002;}
+.popup_wrap { display: none; position: absolute;top: 50%;left: 50%;transform:translate(-50%, -50%);width: 80%;height: 100%;max-width: 800px;max-height: 75%;background: rgba(255, 255, 255, 0.925);border-radius: 10px;z-index: 1002;}
 .close_btn {position: absolute;top: 20px;right: 20px;width: 25px;height: 25px;cursor: pointer;}
 .close_btn::before, .close_btn::after {display:block;content: '';position: absolute;top: 50%;left: 50%;width: 25px;height: 2px;background: #111;}
 .close_btn::before {transform: translate(-50%, -50%) rotate(45deg);}
@@ -265,8 +265,9 @@ header{background: none;}
 /* 디자인 */
 .design .inner h2{ position: absolute; top:100px;}
 .design .inner li{width: 300px; height: 300px; margin: 20px;}
-.design .inner li p{position:relative; left: 50%; top:-150px; color: #000; transform: translate(-50%, -50%); transition: all 0.5s; opacity: 0;}
+.design .inner li p{position:relative; top:-150px; color: #000;  transition: all 0.5s; opacity: 0;}
 .design .inner li:hover p{opacity: 1;}
+.popup_wrap {max-height: 80%;}
 
 
 /* 프로필 */
