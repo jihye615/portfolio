@@ -194,6 +194,7 @@ header .pager-mo,.pager-pc{display: none;}
 .profilo .About img{width: 200px; margin-right: 10px;}
 .profilo .About ul{width: 60%; font-size: 14px;}
 .profilo .About ul li:first-child{font-weight: bold; font-size: 17px;}
+.profilo .About ul li:last-child{margin:10px 20px; text-decoration: underline; font-weight: bold;}
 .profilo .About ul li{margin:10px 0;}
 .profilo .About ul li img{width: 40px; height: 40px;}
 
