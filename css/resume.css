@@ -1,0 +1,20 @@
+@charset "UFT-8";
+*{margin: 0; padding: 0;}
+img{display: block; width: 100%;}
+.wrap{width: 80%; max-width: 1200px; margin: auto;}
+
+/* resume_01  */
+td{border: 2px solid rgb(2, 2, 2); height: 30px; width: 150px; text-align: center;}
+table{width: 100%; height: auto; margin: auto; border-collapse: collapse;}
+.resume caption{ margin: 20px 0; font-size: 30px; font-weight: bold;}
+.resume tr td:first-child{background-color: rgb(231, 248, 211);}
+.resume .age{background-color: rgb(231, 248, 211);}
+.resume_01 table tr:first-child{background-color: rgb(231, 248, 211);}
+.resume_01 h3{margin: 10px 0;}
+
+/* resume_02 */
+.resume_02{margin-top: 100px;}
+.resume_02 h2{margin: 20px 0; font-size: 30px; font-weight: bold; text-align: center; background-color: rgb(231, 248, 211);}
+.resume_02 h3{text-align: center; font-weight: bold; font-size: 22px; padding: 20px;}
+.resume_02 div p{padding-bottom: 20px; font-size: 14px; text-align: center;}
+.resume_02 div{width: 100%; height: auto; border-bottom: 5px solid rgb(231, 248, 211);}
