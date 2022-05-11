@@ -1,7 +1,7 @@
 // 스크롤라
 $('.animate').scrolla();
 
-let pager=$(".pager ul li");
+let pager=$(".pager-pc ul li , .pager-mo ul li");
 let cont=$("#wrap>section");
 
 $(window).scroll(function(){
@@ -45,13 +45,13 @@ $('.menu-toggle-btn').click(function(){
     $('nav.pager-mo').stop().slideUp();
 });
 
-new Swiper('.slider .swiper', {
+new Swiper('#slider .swiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1, //한 번에 보여지는 슬라이드 개수
     navigation : {
-        prevEl : ".slider .button-prev",
-        nextEl : ".slider .button-next"
+        prevEl : "#slider .button-prev",
+        nextEl : "#slider .button-next"
     }
 });
 
